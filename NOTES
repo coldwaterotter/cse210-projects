@@ -32,6 +32,31 @@ if (x > y)
 string school = "BYU-Idaho";
 Console.WriteLine($"I am studying at {school}.");
 
+// If, Else If, and Else
+
+// Operators
+/*
+
+== - equal to
+!= - not equal
+>= - greater than or equal
+<= - less than or equal 
+&& - and
+|| - or
+! - Not
+
+*/
 
 
+//Camel Case
 
+string valueInText = "42";
+int number = int.Parse(valueInText);
+// Convert String to Int
+Console.Write("What is your favorite number? ");
+string userInput = Console.ReadLine();
+int number = int.Parse(userInput);
+
+// Convert Int to String
+int number = 42;
+string textVersion = number.ToString();
