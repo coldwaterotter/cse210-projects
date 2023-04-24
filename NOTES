@@ -96,3 +96,30 @@ foreach (string color in colors)
 Random randomGenerator = new Random();
 int number = randomGenerator.Next(1, 11);
 // upper bounds is not inclusive
+
+using System.Collections.Generic;
+//Lists 
+List<int> numbers;
+numbers = new List<int>();
+//or
+List<string> words = new List<string>();
+
+//add to the list
+words.Add("phone");
+words.Add("keyboard");
+words.Add("mouse");
+
+//size of the list
+Console.WriteLine(words.Count);
+
+//iterate through list
+foreach (string word in words)
+{
+    Console.WriteLine(word);
+}
+
+for (int i = 0; i < words.Count; i++)
+{
+    Console.WriteLine(words[i]);
+}
+
