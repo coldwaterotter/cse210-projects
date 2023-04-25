@@ -123,3 +123,17 @@ for (int i = 0; i < words.Count; i++)
     Console.WriteLine(words[i]);
 }
 
+//Functions
+returnType FunctionName(dataType parameter1, dataType parameter2)
+{
+    // function_body
+}
+void DisplayMessage()
+{
+    Console.WriteLine("Hello world!");
+}
+// regular or standalone functions 'static'
+static void DisplayPersonalMessage(string userName)
+{
+    Console.WriteLine($"Hello {userName}");
+}
