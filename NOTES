@@ -254,3 +254,7 @@ foreach (Blind b in johnsonHome._blinds)
 //Instantiate - A verb that means "to create an instance of."
 
 //Method - A member function. Methods are called using "dot notation" with an instance of the class before the dot.
+
+//Date
+DateTime theCurrentTime = DateTime.Now;
+string dateText = theCurrentTime.ToShortDateString();
