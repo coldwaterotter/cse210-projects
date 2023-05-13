@@ -50,6 +50,18 @@ public class Journal
         }
     }
 
+    public void FindEntry(string keyword)
+    {
+        foreach (Entry entry in _pages)
+        {
+            if (entry.HasKeyword(keyword))
+            {
+                NicePrint(entry.GetEntry());
+            }
+        }
+
+    }
+
     public void SaveEntries(string save)
     {
         string fileName = save;
@@ -77,7 +89,7 @@ public class Journal
             createPage._date = parts[0];
             createPage._prompt = parts[1];
             createPage._text = parts[2];
-            
+
             _pages.Add(createPage);
         }
 

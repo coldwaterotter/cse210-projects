@@ -17,6 +17,15 @@ public class Entry
         return $"{_date}\n{_prompt}\n\n{_text}";
     }
 
+    public bool HasKeyword(string key)
+    {
+        if (_text.ToUpper().Contains(key.ToUpper()))
+        {
+            return true;
+        }
+        return false;
+
+    }
     
     
 

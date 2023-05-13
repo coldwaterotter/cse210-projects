@@ -11,14 +11,14 @@ public class Menu
     public void Display()
     {
         string response = "";
-        string[] options = {"W", "D", "L", "S", "Q"};
+        string[] options = {"W", "D", "L", "S", "Q","F"};
         Console.WriteLine("\n\nWelcome to the Journal Program!\n");
         
         while(response != "Q")
         {
             while (options.Contains(response)==false)
             {
-                Console.Write("[W]rite \n[D]Display \n[L]oad \n[S]ave \n[Q]uit\n\n What do you want to do?\n> ");
+                Console.Write("[W]rite Entry\n[D]Display All Entries\n[F]ind Entry by Keyword \n[L]oad \n[S]ave \n[Q]uit\n\n What do you want to do?\n> ");
                 response = Console.ReadLine() ?? String.Empty;
                 response = response.ToUpper();
             }
@@ -35,6 +35,12 @@ public class Menu
 
                 case "D":
                     _journal.DisplayEntries();
+                    break;
+
+                case "F":
+                    Console.Write("What keyword would you like to search? \n > ");
+                    string keyword = Console.ReadLine() ?? String.Empty;
+                    _journal.FindEntry(keyword);
                     break;
 
                 case "L":
