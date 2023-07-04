@@ -1,0 +1,5 @@
+4540
+1|Go to bed|Get 8 hours of sleep|True|50
+1|Finish the Develop 05|Submit my github and canvas assignment|True|500
+2|Read BoM|10 minutes a day|True|100
+3|Gratitude Journal|Write something everyday this week|False|25|4|7|1500
