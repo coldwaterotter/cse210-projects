@@ -5,8 +5,10 @@ public class Word
     public Word(string text)
     {
        _word = text;
-        
+       //_hidden = false;
     }
+
+    //privacy returntype methodname(arguments)
 
     public void Hide()
     {
@@ -45,7 +47,7 @@ public class Word
 
             foreach (char letter in _word)
             {
-                if (letter != '.' || letter != '!' || letter != '?' || letter != ',' || letter != ':' || letter != ';')
+                if ((letter != '.') || (letter != '!') || (letter != '?') || (letter != ',') || (letter != ':') || (letter != ';'))
                 {
                     hiddenWord += "_";
                 }

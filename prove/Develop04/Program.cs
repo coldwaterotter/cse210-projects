@@ -18,7 +18,7 @@ class Program
             Console.WriteLine("  5. Quit");
             Console.WriteLine("Select a choice from the menu:");
             Console.Write(" >  ");
-            
+            response = int.Parse(Console.ReadLine());
             //time = GetTime();
             switch (response)
             {
